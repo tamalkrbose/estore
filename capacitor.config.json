@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "estore",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

@@ -1,0 +1,7 @@
+{
+  "name": "estore",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
