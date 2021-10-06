@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>dashboard</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <h6>Import Excel</h6>
+    <ion-item lines="" text-wrap style="width: fit-content;">
+      <ion-label position="floating">Enter Batch Number</ion-label>
+      <ion-textarea [(ngModel)]="vSearchText" (ngModelChange)="vSearch()" type="text" maxLength="101" required></ion-textarea>
+    </ion-item>
+    <ion-button type="submit"  (click)="getImported()" color="primary" expand="">Import</ion-button>
+    <p>Note** - Current date will be added as a prefix to the Batch No provided by you in the format "170721" to make it unique and easy to remember. you only have to write A, B or C whenever you upload a file in a single day so that if you upload two excel files on date 17/07/2021, two batch nos will be 170721A and 170721B</p>
+  </ion-card>
+  
+  <ion-card>
+    <h6>Download your Sample excell</h6>
+    <ion-button type="submit"  (click)="getDownloaded()" color="primary" expand="">Download</ion-button>
+         
+  </ion-card>
+
+</ion-content>

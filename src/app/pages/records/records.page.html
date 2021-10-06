@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Excel Records</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item lines="" text-wrap style="width: fit-content;">
+    <ion-label position="floating">Search</ion-label>
+    <ion-textarea [(ngModel)]="vSearchText" (ngModelChange)="vSearch()" type="text" maxLength="101" required></ion-textarea>
+  </ion-item>
+  
+  <ion-card>
+    <ion-grid class="ion-margin">
+      <ion-row>
+        <ion-col>PO ID</ion-col>
+        <ion-col>Custom ID</ion-col>
+        <ion-col>Ship Name</ion-col>
+        <ion-col>Ship Mobile No</ion-col>
+        <ion-col>ship City </ion-col>
+        <ion-col>ShipPin code</ion-col>
+        <ion-col>Order Date</ion-col>
+        <ion-col>Weight</ion-col>
+        <ion-col>Status</ion-col>
+
+      </ion-row>
+      <ion-row *ngFor="let p of recordData">
+        <ion-col>{{ p.poId }}</ion-col>
+        <ion-col>{{ p.customId }}</ion-col>
+        <ion-col>{{ p.shipMobNumber }}</ion-col>
+        <ion-col>{{ p.shipCity }}</ion-col>
+        <ion-col>{{ p.ShipPinCode }}</ion-col>
+        <ion-col>{{ p.orderDate }}</ion-col>
+        <ion-col>{{ p.weight }}</ion-col>
+        <ion-col>{{ p.status }}</ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+  
+</ion-content>
+ 
