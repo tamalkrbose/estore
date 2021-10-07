@@ -27,7 +27,7 @@ export class DataService {
   }
 
   getExcelData(data: any, ): Observable < any > {
-    let url = PATH + 'dashboard/getExcelData';
+    let url = PATH + 'print/getExcelData';
     return this.http.post < any > (url, data);
   }
 
