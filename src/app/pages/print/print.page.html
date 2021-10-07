@@ -9,7 +9,7 @@
     <h6>Print Delivery Sticker</h6>
     <ion-item lines="" text-wrap style="width: fit-content;">
       <ion-label position="floating">Enter Batch Number</ion-label>
-      <ion-textarea [(ngModel)]="vSearchText" (ngModelChange)="vSearch()" type="text" maxLength="101" required></ion-textarea>
+      <ion-textarea [(ngModel)]="vSearchText" type="text" maxLength="101" required></ion-textarea>
     </ion-item>
     <ion-button type="submit"  (click)="getPrinted()" color="primary" expand="">Print</ion-button>
      </ion-card>
