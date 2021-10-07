@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
+//import * as firebase from 'firebase'
 import firebase from 'firebase/app';
-import { initializeApp } from "firebase/app";
+//import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
   apiKey: "AIzaSyBeRZX8ixxLK7IM-VYokTZ-ZW_AthSYMDE",
