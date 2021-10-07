@@ -10,7 +10,7 @@ import {
 } from 'rxjs';
 
 
-const PATH = "https://erpexcel.herokuapp.com/";
+const PATH = "https://erpdocserver.herokuapp.com/";
 
 @Injectable({
   providedIn: 'root'
