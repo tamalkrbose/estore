@@ -8,10 +8,9 @@
 </ion-header>
 
 <ion-content>
-  <ion-item style="width: 400px;">
-    <ion-label>Search</ion-label>
-    <ion-input [(ngModel)]="vSearchText" type="text" required></ion-input>
-    <ion-button (click)="search()">search</ion-button>
+  <ion-item lines="" text-wrap style="width: fit-content;">
+    <ion-label position="floating">Search</ion-label>
+    <ion-textarea [(ngModel)]="vSearchText" (ngModelChange)="vSearch()" type="text" maxLength="101" required></ion-textarea>
   </ion-item>
   
   <ion-card>
@@ -29,13 +28,12 @@
 
       </ion-row>
       <ion-row *ngFor="let p of recordData">
-        <ion-col>{{ p.po_id }}</ion-col>
-        <ion-col>{{ p.customer_id }}</ion-col>
-        <ion-col>{{ p.ship_name }}</ion-col>
-        <ion-col>{{ p.ship_mobile_number }}</ion-col>
-        <ion-col>{{ p.ship_city }}</ion-col>
-        <ion-col>{{ p.ship_pincode }}</ion-col>
-        <ion-col>{{ p.order_date }}</ion-col>
+        <ion-col>{{ p.poId }}</ion-col>
+        <ion-col>{{ p.customId }}</ion-col>
+        <ion-col>{{ p.shipMobNumber }}</ion-col>
+        <ion-col>{{ p.shipCity }}</ion-col>
+        <ion-col>{{ p.ShipPinCode }}</ion-col>
+        <ion-col>{{ p.orderDate }}</ion-col>
         <ion-col>{{ p.weight }}</ion-col>
         <ion-col>{{ p.status }}</ion-col>
       </ion-row>
